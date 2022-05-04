@@ -22,9 +22,8 @@ public class Test {
 	public void test() {
 		System.out.println("Prueba de Conexión");
 		try {
-			Conexion instance = new Conexion();
 			String resultado = "";
-			if(instance.conectar() != null) {
+			if(Conexion.conectar() != null) {
 				resultado = "Conexion Establecida..";
 			}else {
 				resultado = "Conexion fallo";
