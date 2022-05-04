@@ -1,0 +1,45 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+	<servlet>
+		<servlet-name>ServletAuth</servlet-name>
+		<display-name>ServletAuth</display-name>
+		<description>ControlGeneral</description>
+		<servlet-class>com.petSmile.control.ServletAuth</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ServletCRUD</servlet-name>
+		<display-name>ServletCRUD</display-name>
+		<description>ControlCrud</description>
+		<servlet-class>com.petSmile.control.ServletCRUD</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ServletRegistro</servlet-name>
+		<display-name>ServletRegistro</display-name>
+		<description>ControlRegistro</description>
+		<servlet-class>com.petSmile.control.ServletRegistro</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletAuth</servlet-name>
+		<url-pattern>/ServletAuth</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ServletCRUD</servlet-name>
+		<url-pattern>/ServletCRUD</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ServletRegistro</servlet-name>
+		<url-pattern>/ServletRegistro</url-pattern>
+	</servlet-mapping>
+	
+
+	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
